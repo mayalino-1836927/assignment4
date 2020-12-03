@@ -16,12 +16,6 @@ analysis_file <- source("app.R")
 p("paragraph")
 _italic_
 
-For this assignment, you will create a multipage interactive shiny application that allows users to explore data about CO2 emissions, which must include:
-
-An introductory page (tab) that introduces the topic, and provides some summary values from the dataset
-An interactive visualization page where users can control a visualization using at least two Shiny widgets
-See below for additional information for each component. 
-
 Introduction Page
 As you introduce your small project, you should describe the variables that you've chosen to analyze. In doing so, make clear which measure(s) of CO2 emission you are focusing on. 
 
@@ -35,12 +29,3 @@ Feel free to calculate and report values that you find relevant. Importantly, yo
 ```{r echo=FALSE}
   climate_data
 ```
-
-Interactive Visualization Page
-On your second page (tab), you'll create an interactive visualization that is controlled by two or more Shiny widgets. A few requirements for this page:
-
-The chart must be interactive (e.g., display information when you hover over visual marks), so you'll need to use a library such as Plotly or Bokeh (or another interactive package of your choice)
-The chart must have clear axis labels, title, and legend (depeding on the chart type)
-At least one of the widgets must change what data is displayed in the chart (e.g., selecting a variable to display in the chart). The other widget can control something like the colors used in the chart, or allow you to select something like the year being displayed
-Below the chart, include a description of why you included the chart, and what patterns emerged as you explored it
-When I say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
