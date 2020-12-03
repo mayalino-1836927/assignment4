@@ -9,8 +9,6 @@ library(styler)
 source("app_ui.R")
 source("app_server.R")
 
-climate_data <- read.csv("https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv", stringsAsFactors = FALSE)
-
 data_range <- range(climate_data$year)
 
 select_values <- colnames(climate_data)

@@ -33,7 +33,7 @@ How much has my variable change over the last N years?
 Feel free to calculate and report values that you find relevant. Importantly, you should calculate these values in your app_server.R file, and display them in your user interface using the appropriate method. 
 
 ```{r echo=FALSE}
-  analysis_data
+  climate_data
 ```
 
 Interactive Visualization Page
