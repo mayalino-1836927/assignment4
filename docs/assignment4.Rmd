@@ -1,0 +1,31 @@
+---
+title: "Climate Change"
+author: "Mayumi Alino"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library("kableExtra")
+library(shiny)
+analysis_file <- source("app.R")
+```
+# Heading 1
+## Heading 2
+**bold text**
+p("paragraph")
+_italic_
+
+Introduction Page
+As you introduce your small project, you should describe the variables that you've chosen to analyze. In doing so, make clear which measure(s) of CO2 emission you are focusing on. 
+
+Then, you will share at least 5 relevant values of interest. These will likely be calculated using your DPLYR skills, answering questions such as: 
+
+What is the average value of my variable across all the counties (in the current year)?
+Where is my variable the highest / lowest?
+How much has my variable change over the last N years?
+Feel free to calculate and report values that you find relevant. Importantly, you should calculate these values in your app_server.R file, and display them in your user interface using the appropriate method. 
+
+```{r echo=FALSE}
+  climate_data
+```
