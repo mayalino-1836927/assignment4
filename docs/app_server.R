@@ -84,7 +84,7 @@ server <- function(input, output) {
     p <- ggplot(
       data = plot_data,
       mapping = aes_string(x = "year", y = input$feature, color = "co2")
-    ) +
+    ) + labs(x = "Year", y = input$feature) +
       geom_point()
     
     if (input$smooth) {
