@@ -76,3 +76,20 @@ lowest_co2_consumer_gdp <- climate_data %>%
 filter(country == lowest_co2_consumer) %>%
   select(gdp) %>%
   print()
+
+server <- function(input, output) {
+  output$plot <- renderPlot({
+    plot_data <- climate_data %>%
+      filter(co2 > input$co2_choice[1], co2 < input$co2_choice[2])
+    p <- ggplot(
+      data = plot_data,
+      mapping = aes_string(x = "year", y = input$feature, color = "co2")
+    ) +
+      geom_point()
+    
+    if (input$smooth) {
+      p <- p + geom_smooth(se = FALSE)
+    }
+    p
+  })
+}
