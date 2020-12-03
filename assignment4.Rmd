@@ -9,7 +9,6 @@ knitr::opts_chunk$set(echo = FALSE)
 library("kableExtra")
 library(shiny)
 analysis_file <- source("app.R")
-source("app_server.R")
 ```
 # Heading 1
 ## Heading 2
@@ -32,6 +31,10 @@ What is the average value of my variable across all the counties (in the current
 Where is my variable the highest / lowest?
 How much has my variable change over the last N years?
 Feel free to calculate and report values that you find relevant. Importantly, you should calculate these values in your app_server.R file, and display them in your user interface using the appropriate method. 
+
+```{r echo=FALSE}
+  analysis_data
+```
 
 Interactive Visualization Page
 On your second page (tab), you'll create an interactive visualization that is controlled by two or more Shiny widgets. A few requirements for this page:

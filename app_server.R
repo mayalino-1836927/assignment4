@@ -12,7 +12,9 @@ library(styler)
 # Create a new `shinyApp()` using the loaded `ui` and `server` variables
 # shinyApp(ui = ui, server = server)
 
-climate_data <- read.csv("https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv", stringsAsFactors = FALSE) %>%
+climate_data <- read.csv("https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv", stringsAsFactors = FALSE)
+
+analysis_data <- na.omit(climate_data) %>%
   mutate(
     capita_per_gdp = energy_per_capita / energy_per_gdp,
     co2_growth_by_gdp = co2_growth_prct / gdp,
