@@ -26,7 +26,7 @@ ui <- fluidPage(
       h3("This project seeks to visualize CO2 data collected by the Our World in Data project. 
          Additionally for this project, are the computed values of the highest co2 producers and consumers, 
          as well the GDP of those countries. Additional data columns have also been added into the dataset 
-         answering such questions as: What is the ratio of energy per capity by the energy per gdp? What is the 
+         answering such questions as: What is the ratio of energy per capita by the energy per gdp? What is the 
          growth of CO2 by GDP? What is the energy per GDP by population? What is the energy per capita by population? 
          What is the primary energy consumption by population? and What is the primary energy consumption by GDP?"),
       h4("The analysis shows that : "),
@@ -55,7 +55,7 @@ ui <- fluidPage(
       h3("Information graphed in this chart include co2 data (where it comes from, who produces how much, who consumes how much, etc),
          energy consumption, and how these factors relate to population, gdp, and growth over time"),
       h4("Additional data columns have also been added into the dataset 
-         to answer such questions as: What is the ratio of energy per capity by the energy per gdp? What is the 
+         to answer such questions as: What is the ratio of energy per capita by the energy per gdp? What is the 
          growth of CO2 by GDP? What is the energy per GDP by population? What is the energy per capita by population? 
          What is the primary energy consumption by population? and What is the primary energy consumption by GDP?")
     )
