@@ -51,7 +51,13 @@ ui <- fluidPage(
       feature_input,
       checkboxInput("smooth", label = strong("Show Trendline"), value = TRUE),
       plotOutput("plot"),
-      h3("This chart depicts the selected value as it trends over time.")
+      h3("This chart depicts the selected value as it trends over time."),
+      h3("Information graphed in this chart include co2 data (where it comes from, who produces how much, who consumes how much, etc),
+         energy consumption, and how these factors relate to population, gdp, and growth over time"),
+      h4("Additional data columns have also been added into the dataset 
+         to answer such questions as: What is the ratio of energy per capity by the energy per gdp? What is the 
+         growth of CO2 by GDP? What is the energy per GDP by population? What is the energy per capita by population? 
+         What is the primary energy consumption by population? and What is the primary energy consumption by GDP?")
     )
   ), View(climate_data)
 )
