@@ -1,9 +1,9 @@
-library("shiny")
-library(tidyverse)
-library(maps)
-library(mapproj)
-library(patchwork)
-library(styler)
+#library(shiny)
+#library(tidyverse)
+#library(maps)
+#library(mapproj)
+#library(patchwork)
+#library(styler)
 
 # Use source() to execute the `app_ui.R` and `app_server.R` files. These will
 # define the UI value and server function respectively.
